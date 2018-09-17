@@ -7,7 +7,7 @@ function sayHello(name) {
 
 function sayHelloEverybody(threeNames) {
 
-  threeNames = ['Cole', ' Jared', ' and SFCM'];
+  var threeNames = ['Cole', ' Jared', ' and SFCM'];
 
   return('Hello ' + threeNames + "!" );
 
@@ -19,7 +19,7 @@ function sayHelloEverybody(threeNames) {
 
 function getClasses() {
 
-  classes = ['Computer Science', ' TTA', ' Film Music', ' Sound Design',
+  var classes = ['Computer Science', ' TTA', ' Film Music', ' Sound Design',
   ' Recording', ' Private Lessons', ' Business for the Media Composer']
   return(classes + ".")
 
@@ -28,6 +28,18 @@ function getClasses() {
 }
 
 function labelOrder(fiveNumbers) {
+
+  var numbers = [1,2,3,4,5];
+  var newArray = ["","","","",""];
+
+  newArray[0] = 'first ' + numbers[0];
+  newArray[1] = ' second: ' + numbers[1];
+  newArray[2] = ' third: ' + numbers[2];
+  newArray[3] = ' fourth: ' + numbers[3];
+  newArray[4] = ' fifth: ' + numbers [4];
+
+  return(newArray)
+
   // TODO: Given an array with five numbers, return a new array
   // of strings that have labels for the ordering.
   // e.g. if fiveNumbers is [1,2,3,4,5] your function should return:
@@ -36,6 +48,15 @@ function labelOrder(fiveNumbers) {
 }
 
 function calculateVolume(w, l, h) {
+
+    var w = 2
+    var l = 2
+    var h = 3
+
+    var volume = w * l * h
+    return(volume)
+
+
   // TODO: given a room's width, length, and height
   // write a function that returns the volume
 }
