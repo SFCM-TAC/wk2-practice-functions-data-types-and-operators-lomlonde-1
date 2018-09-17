@@ -1,10 +1,16 @@
-
 function sayHello(name) {
+  return('Hello, ' + name + "!")
+
   // TODO: return a greeting string that greets
   // the person by name, e.g. "Hello, Emily!"
 }
 
 function sayHelloEverybody(threeNames) {
+
+  threeNames = ['Cole', ' Jared', ' and SFCM'];
+
+  return('Hello ' + threeNames + "!" );
+
   // TODO: return a greeting string that greets
   // all three people in the threeNames array
   // e.g. "Hello, Emily, MaryClare, and Taurin!"
@@ -12,6 +18,11 @@ function sayHelloEverybody(threeNames) {
 }
 
 function getClasses() {
+
+  classes = ['Computer Science', ' TTA', ' Film Music', ' Sound Design',
+  ' Recording', ' Private Lessons', ' Business for the Media Composer']
+  return(classes + ".")
+
   // TODO: return an array with a list of strings
   // naming the classes you are taking this semester
 }
