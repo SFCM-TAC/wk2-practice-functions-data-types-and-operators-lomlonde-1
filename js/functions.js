@@ -32,7 +32,7 @@ function labelOrder(fiveNumbers) {
   var numbers = [1,2,3,4,5];
   var newArray = ["","","","",""];
 
-  newArray[0] = 'first ' + numbers[0];
+  newArray[0] = 'first: ' + numbers[0];
   newArray[1] = ' second: ' + numbers[1];
   newArray[2] = ' third: ' + numbers[2];
   newArray[3] = ' fourth: ' + numbers[3];
@@ -49,11 +49,11 @@ function labelOrder(fiveNumbers) {
 
 function calculateVolume(w, l, h) {
 
-    var w = 2
-    var l = 2
-    var h = 3
+    var w = 2;
+    var l = 2;
+    var h = 3;
 
-    var volume = w * l * h
+    var volume = w * l * h;
     return(volume)
 
 
@@ -62,15 +62,31 @@ function calculateVolume(w, l, h) {
 }
 
 function isOdd(n) {
+
+  var evenOdd;
+
+  if (n%2 == 0)
+    evenOdd = false
+  else
+    evenOdd = true
+
+    return(evenOdd)
+
+}
+
   // TODO: given a number, return true if it is odd, false if it is even
   // HINT: the expression "Boolean(0)" is false, "Boolean(1)"" is true
   // DOUBLE HINT: Try using the modulus operator (%)
-}
 
 // ** CART PRICES ** //
 
 const saleAmount = .25 // 25% off!
 function getSalePrice(originalPrice) {
+
+    var salePrice;
+    salePrice = (originalPrice - (originalPrice*saleAmount));
+    return(salePrice);
+
   // TODO: given a dollar price (e.g. 5.99), return
   // a price with the saleAmount discount applied
   // e.g. if originalPrice is 4.00, your function should return 3.00.
@@ -78,6 +94,17 @@ function getSalePrice(originalPrice) {
 }
 
 function getSalePrices(threeOriginalPrices) {
+
+    var price1 = threeOriginalPrices[0];
+    var price2 = threeOriginalPrices[1];
+    var price3 = threeOriginalPrices[2];
+
+    var salePrice1 = getSalePrice(price1);
+    var salePrice2 = getSalePrice(price2);
+    var salePrice3 = getSalePrice(price3);
+
+    return [salePrice1, salePrice2, salePrice3];
+
   // TODO: given an array of prices for three items in a cart,
   // return a new array with the saleAmount discount applied to each.
   // TIP: see if you can reuse the getSalePrice function that you just wrote!
