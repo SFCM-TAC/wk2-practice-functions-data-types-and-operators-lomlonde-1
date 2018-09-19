@@ -115,12 +115,17 @@ function getSalePrices(threeOriginalPrices) {
 
 var counter = 0;
 function incrementCounter() {
+
+  counter++;
+  showCounter(counter);
+
   // TODO: implement a function that increments (adds 1) to the counter variable
   // and then calls showCounter to update the interface with the new value.
   // Test your code by opening the developer console and calling incrementCounter.
   // The displayed answer for this question should increase by 1!
 }
-function showCounter() {
-  // updates the counter element with the latest value
-  document.getElementById('counter').textContent = counter;
+
+function showCounter(newValue) {
+  document.getElementById('counter').textContent = counter; // updates the counter element with the latest value
+
 }
